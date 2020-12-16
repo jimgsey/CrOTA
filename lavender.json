@@ -1,0 +1,24 @@
+{
+	"response": [
+		{
+			"maintainer": "Jimgsey",
+			"oem": "Redmi",
+			"device": "Redmi Note 7",
+			"filename": "crDroidAndroid-11.0-20201216-lavender-v7.1.zip",
+			"download": "https://sourceforge.net/projects/lavender7/files/Crdroid/Android-R/crDroidAndroid-11.0-20201216-lavender-v7.1.zip/download",
+			"timestamp": 1608111744,
+			"md5": "9059557117e06577c0442ee777b7c898",
+			"size": 1085119762,
+			"version": "7.1",
+			"buildtype": "Weekly with Pico Gapps",
+			"forum": "https://telegra.ph/Everything-for-lavender-RN-7-12-07",
+			"gapps": "",
+			"firmware": "",
+			"modem": "",
+			"bootloader": "",
+			"recovery": "",
+			"paypal": "http://t.me/Jimgsey",
+			"telegram": "http://t.me/Jimgsey"
+		}
+	]
+}
