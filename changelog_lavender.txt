@@ -1,9 +1,57 @@
+
+====================
+     12-21-2020
+====================
+
+   * build/make
+e06b701 Use 'release-keys' for build tag
+
+   * frameworks/base
+372a45bc SystemUI: Fix display cutout handling in expanding volume panel
+
+====================
+     12-20-2020
+====================
+
+   * frameworks/native
+3f65f88 SF: handle long waiting Layer sync point
+
+   * packages/apps/Launcher3
+1b00a68 Revert "Launcher3: Enable share button on recents by default"
+
+====================
+     12-19-2020
+====================
+
+====================
+     12-18-2020
+====================
+
+   * hardware/knowles/athletico/sound_trigger_hal
+c66811b Use generated kernel headers
+
+   * hardware/qcom/sm8150/data/ipacfg-mgr
+3cbf948 Use generated kernel headers
+
+====================
+     12-17-2020
+====================
+
+   * packages/apps/Backgrounds
+44344d3 Backgrounds: Move to /product
+
+   * packages/apps/ExactCalculator
+c3602a5 ExactCalculator: Move to /product
+
+   * packages/apps/PermissionController
+fcef90c PermissionController: Implement getPermissionUsages API
+
 ====================
      12-16-2020
 ====================
 
-   * hardware/qcom-caf/msm8916/media
-bf62f59 media: Add media headers lib
+   * hardware/qcom-caf/wlan
+bb71c38 wcnss-service: Opt-in to disable copying WCNSS_qcom_cfg.ini to userdata
 
    * packages/services/BuiltInPrintService
 4c6694b use RGB when delivering images to printers
@@ -12,17 +60,8 @@ bf62f59 media: Add media headers lib
      12-15-2020
 ====================
 
-   * android
-e68cdfa Merge 'lineage-18.1' into 11.0
-
-   * art
-54f8c8d art: Conditionally remove version check for memfd_create()
-
-   * frameworks/base
-30b5fbaa IdleMaint: run IdleMaint if battery is charging
-
-   * frameworks/native
-34451d2 libbinder: support inheriting realtime priority
+   * hardware/qcom-caf/msm8916/media
+bf62f59 media: Add media headers lib
 
    * hardware/qcom-caf/msm8996/display
 1efa686 Merge tag 'LA.UM.9.6.2.r1-03300-89xx.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/display-commonsys-intf into 11.0-caf-msm8996
@@ -31,10 +70,7 @@ e68cdfa Merge 'lineage-18.1' into 11.0
 3e48b40 audio: Add audio headers lib
 
    * hardware/qcom/display
-b7b9f3e msm8084: Add display headers lib
-
-   * hardware/qcom/gps
-9bd070f msm8084: Silence build warnings
+818ef15 msm8084: hwcomposer: fix some build  warnings
 
    * hardware/qcom/media
 4c1c087 msm8974: Fix build warning
@@ -42,302 +78,9 @@ b7b9f3e msm8084: Add display headers lib
    * packages/apps/Matlog
 d1eab94 Fix translation error
 
-   * packages/apps/ThemePicker
-1a19794 ThemePicker: Use title capitalization for style name field
-
    * prebuilts/abi-dumps/vndk
 8aacbfd vndk: remove libbinder.so from ABI check target
 
-   * vendor/lineage
-2f4164b overlay: Add more support for Google apps and services
-
-====================
-     12-14-2020
-====================
-
-   * frameworks/av
-18995a4 Merge pull request #3 from GtrCraft/11.0
-
-   * hardware/qcom-caf/msm8996/media
-270cc0f Merge tag 'LA.UM.9.6.2.r1-03300-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into 11.0-caf-msm8996
-
-   * packages/apps/crDroidSettings
-a32524e Smart pixels - note update
-
-====================
-     12-13-2020
-====================
-
-   * bionic
-a45a1d5 pthread_cond: only call futex_wake when there are waiters
-
-   * build/make
-21ffb5b soong: Add ability to enable product_shipping_api_level variant.
-
-   * build/soong
-2fd557a soong: Add ability to enable product_shipping_api_level variant.
-
-   * device/lineage/sepolicy
-3b8e494 sepolicy: Move in pocket service sepolicy
-
-   * device/qcom/sepolicy-legacy
-480fed5 legacy: display.qservice is now a vendor service for everyone
-
-   * frameworks/opt/telephony
-c0ef688 Fix vendor class compilation
-
-   * lineage-sdk
-44a4add Profile: Don't NPE when service is not started
-
-   * packages/apps/Contacts
-9e1c4b0 Contacts: Fix light dropdown lists on dark theme
-
-   * packages/apps/Dialer
-367a7ce Dialer: Dont change accent color for dark theme
-
-   * packages/apps/Launcher3
-b02adc7 IconPref: Use correct mipmap icon
-
-   * packages/apps/LineageParts
-3014df0 LineageParts: Tweak default charging sound path
-
-   * packages/apps/Messaging
-743015f Messaging: fix dark mode ExpandableListView e.g. vcf card attachment
-
-   * packages/apps/Settings
-9baa358 Fix long click intent for Smart Pixels tile [2/2]
-
-   * packages/inputmethods/LatinIME
-9a91a2f Add Hardslog light theme
-
-   * prebuilts/build-tools
-318e474 Merge tag 'android-11.0.0_r19' into 11.0
-
-   * system/core
-98ae5a2 health: Add CAP_BLOCK_SUSPEND
-
-   * system/hardware/interfaces
-d814474 Merge tag 'android-11.0.0_r19' into 11.0
-
-   * system/netd
-41fbb7d netd: Allow devices to force-add directly-connected routes
-
-   * system/sepolicy
-faa2181 Allow init to write to /proc/cpu/alignment
-
-   * vendor/qcom/opensource/interfaces
-c715742 interfaces: Introduce vendor.qti.hardware.btconfigstore@2.0 HAL
-
-====================
-     12-12-2020
-====================
-
-   * bootable/recovery
-dc9268f recovery: make /etc/fstab only include entries that match the detected fs type
-
-   * build/blueprint
-48e46e9 Add CreateAliasVariation
-
-   * device/generic/goldfish-opengl
-5259dd9 android-emu: Fix -Wunused-function warning
-
-   * external/arm-optimized-routines
-c06bcb7 Revert "Make vendor_ramdisk_available."
-
-   * external/chromium-webview
-33ab33d Update Chromium Webview to 87.0.4280.101
-
-   * external/e2fsprogs
-f6638bb resize: Make a target for standalone resize2fs_static binary
-
-   * external/gptfdisk
-9f871cd gptfdisk: include gptcl.h after sgdisk.h
-
-   * external/guice
-341b365 guice: Remove .class files from srcjar
-
-   * external/libcxx
-8e12f3e Make libc++fs vendor available and as a shared lib
-
-   * external/libjpeg-turbo
-ddd094e Revert "Add product_available to product available modules"
-
-   * external/mksh
-7703b0f mksh: Set TERM to xterm-256color
-
-   * external/perfetto
-8efd17c perfetto: Conditionally remove version check for memfd_create()
-
-   * external/tinyalsa
-65b23d8 Mark tinymix/tinyplay as vendor_available
-
-   * external/tinycompress
-d78bf3b tinycompress: Conditionally enable extended compress format
-
-   * frameworks/opt/net/wifi
-e6611b3 resurrect mWifiLinkLayerStatsSupported counter
-
-   * frameworks/opt/timezonepicker
-05af715 Restore time_zone_item ripple effect
-
-   * hardware/broadcom/libbt
-ec39e72 correct WBS config VSC params
-
-   * hardware/interfaces
-434a7c2 camera: Only link and use vendor.qti.hardware.camera.device if specified
-
-   * hardware/libhardware
-90e3ce2 hardware/libhw: Add display_defs.h to declare custom enums/flags
-
-   * hardware/libhardware_legacy
-bcaaf65 Add wifi_add_or_remove_virtual_intf() to the legacy wifi hal
-
-   * hardware/qcom/data/ipacfg-mgr
-d9334ba ipacfg-mgr: Use generated kernel headers
-
-   * hardware/qcom/sdm845/display
-39287d7 Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT
-
-   * hardware/ril
-f958793 Make RIL command headers overlayable by devices.
-
-   * packages/apps/Camera2
-0632ee8 jni: Build libs against current sdk
-
-   * packages/apps/SettingsIntelligence
-1dcca1c Normalize dynamic search result in Japanese
-
-   * packages/apps/WallpaperPicker2
-d2ff99d WallpaperPicker2: Declare usage of missing permissions
-
-   * packages/providers/BlockedNumberProvider
-64fbbf4 BlockedNumberProvider: adaptive icon
-
-   * packages/providers/BookmarkProvider
-b920966 BookmarkProvider: adaptive icon
-
-   * packages/providers/CalendarProvider
-dc089ae CalendarProvider: adaptive icon
-
-   * packages/providers/CallLogProvider
-1de0689 CallLogBackup: adaptive icon
-
-   * packages/wallpapers/LivePicker
-af4f4f5 LivePicker: adaptive icon
-
-   * prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9
-b835552 gcc-4.9: Restore GCC
-
-   * prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9
-f04dbd2 gcc-4.9: Restore GCC
-
-   * prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9
-994ce4f gcc-4.9: Restore GCC
-
-   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
-be79a1c gcc-4.9: Restore GCC
-
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
-da10d2b gcc-4.9: Restore GCC
-
-   * prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9
-33cdb04 gcc-4.9: Restore GCC
-
-   * system/incremental_delivery
-766ee48 libdataloader: Don't pollute namespace with android::dataloader
-
-   * system/libufdt
-4eff1af mkdtboimg: Sanitize dt filename
-
-   * system/tools/mkbootimg
-ed76fcc mkbootimg: add support for --dt
-
-   * system/update_engine
-5374eaa update_engine: Run backuptool only in debuggable builds
-
-====================
-     12-11-2020
-====================
-
-====================
-     12-10-2020
-====================
-
-====================
-     12-09-2020
-====================
-
-   * development
-4d3d497 privapp_permissions: Check product privapp_permissions
-
-   * device/generic/goldfish
-4394963 camera: Fix -Wformat warnings
-
-   * device/google/atv
-388260c Disable Traceur on userdebug
-
-   * hardware/nxp/nfc
-512adbd nfc: Restore pn548 support to 1.1 HAL
-
-   * packages/apps/Bluetooth
-17330d5 Bluetooth string: removed id="sender" in bt_sm_2_1_
-
-   * packages/apps/CarrierConfig
-980db98 Fix voicemail for Bouygues Telecom France
-
-   * packages/apps/DeskClock
-a47f676 Provide upgrade path for cm-14.1 -> lineage-18.0
-
-   * packages/apps/DocumentsUI
-b6314dc Remove unused string resources
-
-   * packages/apps/Nfc
-f057190 NFC: Adding new vendor specific interface to NFC Service
-
-   * packages/apps/PhoneCommon
-5799e79 Mark dialpad letters as untranslatable.
-
-   * packages/apps/Stk
-f8e224a Close Tone Dialog if the requested tone has already been stopped
-
-   * packages/apps/TvSettings
-3a46d1c Add rooted development option
-
-   * packages/providers/ContactsProvider
-2d36cd9 CallLogDatabase: Try to re-run the version 6 upgrade path
-
-   * packages/providers/DownloadProvider
-24fcc9a DownloadProvider: Add support for manual pause/resume
-
-   * packages/providers/MediaProvider
-114958f MediaProvider: adaptive icon
-
-   * packages/providers/TelephonyProvider
-f1e77da TelephonyProvider: add upgrade support from lineage-16.0
-
-   * packages/services/Mms
-645a0b3 Mms: adaptive icon
-
-   * packages/services/Telecomm
-f386d06 Telecomm: Squashed phone_type switch support
-
-   * packages/services/Telephony
-3dd8187 Telephony: Add ERI configuration for U.S. Cellular
-
-   * system/bt
-6f0accd Add support to force disable enhanced sco commands
-
-   * system/vold
-c731e3d vold: skip first disk change when converting MBR to GPT
-
-   * tools/metalava
-21659a2 [Metalava] don't use reflections
-
-====================
-     12-08-2020
-====================
-
-====================
-     12-07-2020
-====================
+   * vendor/codeaurora/telephony
+1847931 Add APIs to set and query NR config.
 
