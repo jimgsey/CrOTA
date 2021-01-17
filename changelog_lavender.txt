@@ -1,86 +1,136 @@
-
 ====================
-     12-21-2020
+     01-16-2021
 ====================
-
-   * build/make
-e06b701 Use 'release-keys' for build tag
-
-   * frameworks/base
-372a45bc SystemUI: Fix display cutout handling in expanding volume panel
-
-====================
-     12-20-2020
-====================
-
-   * frameworks/native
-3f65f88 SF: handle long waiting Layer sync point
 
    * packages/apps/Launcher3
-1b00a68 Revert "Launcher3: Enable share button on recents by default"
+0724eaf Launcher3: Honor desktop show labels preference for folder icons
+
+   * packages/apps/Settings
+a1a81ab Make selectable consistent with prefs on screen
+
+   * packages/apps/Snap
+b6ebe16 Snap: there is no camera icon shown if have no camera in first boot up
+
+   * packages/apps/crDroidSettings
+c14ead3 Add string for device codename pref
+
+   * system/netd
+2bf9bd3 system/netd: add missing override keyword
 
 ====================
-     12-19-2020
+     01-15-2021
 ====================
 
+   * device/qcom/sepolicy-legacy-um
+c3a3f76 common: Allow system_app to read fm_radio_device
+
+   * frameworks/av
+bf0b624 CCodec: workaround for frame drops
+
+   * frameworks/base
+03b580d2 Revert "Revert "Restore preferred activity filter if it not inside""
+
+   * frameworks/native
+d26e3ae gralloc4: fix PlaneLayout encode typecasting
+
+   * hardware/qcom-caf/sm8150/audio
+b3a1a6c Merge tag 'LA.UM.9.1.r1-08300-SMxxx0.0' into 11.0-caf-sm8150
+
+   * hardware/qcom-caf/sm8150/display
+b1455ea Merge tag 'LA.UM.9.1.r1-08300-SMxxx0.0' into 11.0-caf-sm8150
+
+   * hardware/qcom-caf/sm8150/media
+fc249dc Merge tag 'LA.UM.9.1.r1-08300-SMxxx0.0' into 11.0-caf-sm8150
+
+   * system/core
+45361aa Adding 'postinstall' root dir unconditionally.
+
 ====================
-     12-18-2020
+     01-14-2021
 ====================
 
-   * hardware/knowles/athletico/sound_trigger_hal
-c66811b Use generated kernel headers
+   * android
+7569650 Merge 'lineage-18.1' into 11.0
+
+   * bionic
+9db3893 Fix __cxa_atexit run-time regression with many registrations
+
+   * build/make
+c9ab70f Merge 'lineage-18.1' into 11.0
+
+   * hardware/lineage/interfaces
+25c9051 Add 'vendor.' prefix to a vendor HAL service name
 
    * hardware/qcom/sm8150/data/ipacfg-mgr
-3cbf948 Use generated kernel headers
+4f288b0 Partial revert "skip building when BUILD_WITHOUT_VENDOR = true"
+
+   * packages/inputmethods/LatinIME
+5b0c0ad LatinIME: Fix NPE in getKeyboardThemeName
+
+   * vendor/lineage
+6654047 vendor: soong: Add camera_needs_client_info
 
 ====================
-     12-17-2020
+     01-13-2021
 ====================
 
-   * packages/apps/Backgrounds
-44344d3 Backgrounds: Move to /product
+   * art
+9278561 Add newStringFromUtf8Bytes native implementation.
 
-   * packages/apps/ExactCalculator
-c3602a5 ExactCalculator: Move to /product
+   * hardware/qcom/sm8150/media
+3042020 vidc: pull in content of libion_path.mk from core-utils
 
-   * packages/apps/PermissionController
-fcef90c PermissionController: Implement getPermissionUsages API
+   * libcore
+b1b944a XML Pull Parser optimizations
 
-====================
-     12-16-2020
-====================
-
-   * hardware/qcom-caf/wlan
-bb71c38 wcnss-service: Opt-in to disable copying WCNSS_qcom_cfg.ini to userdata
-
-   * packages/services/BuiltInPrintService
-4c6694b use RGB when delivering images to printers
+   * system/security
+8db8879 keystore: Block key attestation for Google Play Services
 
 ====================
-     12-15-2020
+     01-12-2021
 ====================
 
-   * hardware/qcom-caf/msm8916/media
-bf62f59 media: Add media headers lib
+   * hardware/qcom/sm8150/display
+08cbcb9 Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE
 
-   * hardware/qcom-caf/msm8996/display
-1efa686 Merge tag 'LA.UM.9.6.2.r1-03300-89xx.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/display-commonsys-intf into 11.0-caf-msm8996
+   * vendor/qcom/opensource/wfd-commonsys
+2fefd77 wfd-commonsys: Guard against non-QSSI_SUPPORTED_PLATFORMS
 
-   * hardware/qcom/audio
-3e48b40 audio: Add audio headers lib
+====================
+     01-11-2021
+====================
 
-   * hardware/qcom/display
-818ef15 msm8084: hwcomposer: fix some build  warnings
+====================
+     01-10-2021
+====================
 
-   * hardware/qcom/media
-4c1c087 msm8974: Fix build warning
+====================
+     01-09-2021
+====================
 
-   * packages/apps/Matlog
-d1eab94 Fix translation error
+   * device/lineage/sepolicy
+36efadc touch: Add IKeySwapper context
 
-   * prebuilts/abi-dumps/vndk
-8aacbfd vndk: remove libbinder.so from ABI check target
+   * packages/apps/ThemePicker
+e3bacf0 Revert "ThemePicker: show scrollbar on clock faces"
 
-   * vendor/codeaurora/telephony
-1847931 Add APIs to set and query NR config.
+====================
+     01-08-2021
+====================
+
+   * system/iorap
+3f05e14 iorap: Increase daemon priority
+
+====================
+     01-07-2021
+====================
+
+   * hardware/qcom-caf/common
+5bd19fa os_pickup: Import common display_intf_headers for QSSI supported platforms
+
+   * hardware/qcom-caf/sdm845/display
+3a9e02b display: Remove display-commonsys-intf git subtree
+
+   * hardware/qcom-caf/sm8250/display
+42ad8e5 display: Remove display-commonsys-intf git subtree
 
