@@ -1,136 +1,118 @@
+
 ====================
-     01-16-2021
+     01-28-2021
 ====================
 
-   * packages/apps/Launcher3
-0724eaf Launcher3: Honor desktop show labels preference for folder icons
+   * lineage-sdk
+83ee430 Merge 'lineage-18.1' into 11.0
 
-   * packages/apps/Settings
-a1a81ab Make selectable consistent with prefs on screen
-
-   * packages/apps/Snap
-b6ebe16 Snap: there is no camera icon shown if have no camera in first boot up
+   * packages/apps/LineageParts
+93e9158 LineageParts: Tweak default charging sound path
 
    * packages/apps/crDroidSettings
-c14ead3 Add string for device codename pref
+c206999 ButtonSettings: Add a setting to swap capacitive keys
 
-   * system/netd
-2bf9bd3 system/netd: add missing override keyword
-
-====================
-     01-15-2021
-====================
-
-   * device/qcom/sepolicy-legacy-um
-c3a3f76 common: Allow system_app to read fm_radio_device
-
-   * frameworks/av
-bf0b624 CCodec: workaround for frame drops
-
-   * frameworks/base
-03b580d2 Revert "Revert "Restore preferred activity filter if it not inside""
-
-   * frameworks/native
-d26e3ae gralloc4: fix PlaneLayout encode typecasting
-
-   * hardware/qcom-caf/sm8150/audio
-b3a1a6c Merge tag 'LA.UM.9.1.r1-08300-SMxxx0.0' into 11.0-caf-sm8150
-
-   * hardware/qcom-caf/sm8150/display
-b1455ea Merge tag 'LA.UM.9.1.r1-08300-SMxxx0.0' into 11.0-caf-sm8150
-
-   * hardware/qcom-caf/sm8150/media
-fc249dc Merge tag 'LA.UM.9.1.r1-08300-SMxxx0.0' into 11.0-caf-sm8150
-
-   * system/core
-45361aa Adding 'postinstall' root dir unconditionally.
+   * system/libhwbinder
+623a210 Revert "Disallow shrinking threadpool size once started."
 
 ====================
-     01-14-2021
+     01-27-2021
 ====================
 
    * android
-7569650 Merge 'lineage-18.1' into 11.0
-
-   * bionic
-9db3893 Fix __cxa_atexit run-time regression with many registrations
-
-   * build/make
-c9ab70f Merge 'lineage-18.1' into 11.0
-
-   * hardware/lineage/interfaces
-25c9051 Add 'vendor.' prefix to a vendor HAL service name
-
-   * hardware/qcom/sm8150/data/ipacfg-mgr
-4f288b0 Partial revert "skip building when BUILD_WITHOUT_VENDOR = true"
-
-   * packages/inputmethods/LatinIME
-5b0c0ad LatinIME: Fix NPE in getKeyboardThemeName
-
-   * vendor/lineage
-6654047 vendor: soong: Add camera_needs_client_info
-
-====================
-     01-13-2021
-====================
+c82ae9e manifest: Track more external repos
 
    * art
-9278561 Add newStringFromUtf8Bytes native implementation.
+54199d4 Merge pull request #2 from xNombre/11.0
 
-   * hardware/qcom/sm8150/media
-3042020 vidc: pull in content of libion_path.mk from core-utils
+   * bionic
+ab8d045 Merge pull request #4 from xNombre/11.0
 
-   * libcore
-b1b944a XML Pull Parser optimizations
+   * external/libjpeg-turbo
+27f5a83 Merge pull request #5 from xNombre/11.0
 
-   * system/security
-8db8879 keystore: Block key attestation for Google Play Services
+   * frameworks/native
+2748007 SurfaceFlinger: VSyncPredictor should be robust with inconsistent vsyncs
 
-====================
-     01-12-2021
-====================
-
-   * hardware/qcom/sm8150/display
-08cbcb9 Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE
-
-   * vendor/qcom/opensource/wfd-commonsys
-2fefd77 wfd-commonsys: Guard against non-QSSI_SUPPORTED_PLATFORMS
+   * packages/services/Telecomm
+935838c Merge pull request #5 from Laker87/11.0
 
 ====================
-     01-11-2021
+     01-26-2021
 ====================
 
-====================
-     01-10-2021
-====================
+   * external/cpu_features
+3eb0c0f Revert "Rename ART release APEX to com.android.art"
+
+   * external/giflib
+b864d49 giflib: Update to v5.2.1
+
+   * external/scudo
+4423fce Revert "Remove ANDROID_EXPERIMENTAL_MTE."
+
+   * external/vixl
+832654c Revert "Rename ART release APEX to com.android.art."
+
+   * external/zlib
+4259787 Merge branch 'upstream-master' of https://android.googlesource.com/platform/external/zlib into 11.0
 
 ====================
-     01-09-2021
+     01-25-2021
+====================
+
+   * hardware/qcom-caf/msm8916/audio
+8eea101 hal: Fix warnings
+
+====================
+     01-24-2021
+====================
+
+   * bootable/recovery
+f3c9aae recovery: Add ability to unmount system
+
+   * prebuilts/clang/host/linux-x86/clang-7095922
+83db63e clang 12.0.2 (based on r407598b) from build 7095922
+
+====================
+     01-23-2021
 ====================
 
    * device/lineage/sepolicy
-36efadc touch: Add IKeySwapper context
+f7db3cf updater_app: Update cache_file permission
 
-   * packages/apps/ThemePicker
-e3bacf0 Revert "ThemePicker: show scrollbar on clock faces"
-
-====================
-     01-08-2021
-====================
-
-   * system/iorap
-3f05e14 iorap: Increase daemon priority
+   * packages/apps/Settings
+4e4fdd9 Merge 'lineage-18.1' into 11.0
 
 ====================
-     01-07-2021
+     01-22-2021
 ====================
 
-   * hardware/qcom-caf/common
-5bd19fa os_pickup: Import common display_intf_headers for QSSI supported platforms
+   * hardware/lineage/interfaces
+8fac36e lineage/interfaces: add fastcharge HAL
 
-   * hardware/qcom-caf/sdm845/display
-3a9e02b display: Remove display-commonsys-intf git subtree
+   * libcore
+099071a Revert^2 "Avoid fd leaks when jniCreateFileDescriptor encounters OOME"
 
-   * hardware/qcom-caf/sm8250/display
-42ad8e5 display: Remove display-commonsys-intf git subtree
+   * prebuilts/abi-dumps/vndk
+e000bb2 vndk: remove libhidlbase.so from ABI check target
+
+====================
+     01-21-2021
+====================
+
+   * hardware/qcom/sm8150/display
+57e1155 display: Drop LOCAL_COPY_HEADERS usage
+
+   * hardware/qcom/sm8150/media
+5992430 media: Drop LOCAL_COPY_HEADERS usage
+
+   * tools/repohooks
+147b6c3 Add aidl-format as a new builtin hook
+
+====================
+     01-20-2021
+====================
+
+   * device/google/atv
+9c591b4 products: Include ATV x86_64 target
 
