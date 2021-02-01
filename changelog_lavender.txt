@@ -1,3 +1,32 @@
+====================
+     01-31-2021
+====================
+
+   * frameworks/base
+15784f18 Merge pull request #571 from Laker87/FODKG
+
+====================
+     01-30-2021
+====================
+
+   * packages/apps/Launcher3
+da95cc3 New Crowdin updates (#118)
+
+====================
+     01-29-2021
+====================
+
+   * external/sqlite
+04a0449 Update README.version
+
+   * frameworks/av
+54a872b Revert "OMX AAC decode don't support getting DRC parameters"
+
+   * packages/apps/ThemePicker
+7611ce0 ThemePicker: Make naming page look the same as the other ones
+
+   * tools/repohooks
+8349d89 config: drop Python 2 support
 
 ====================
      01-28-2021
@@ -6,8 +35,8 @@
    * lineage-sdk
 83ee430 Merge 'lineage-18.1' into 11.0
 
-   * packages/apps/LineageParts
-93e9158 LineageParts: Tweak default charging sound path
+   * packages/apps/Gallery2
+4e96ca6 Gallery2: dark theme
 
    * packages/apps/crDroidSettings
 c206999 ButtonSettings: Add a setting to swap capacitive keys
@@ -34,8 +63,8 @@ ab8d045 Merge pull request #4 from xNombre/11.0
    * frameworks/native
 2748007 SurfaceFlinger: VSyncPredictor should be robust with inconsistent vsyncs
 
-   * packages/services/Telecomm
-935838c Merge pull request #5 from Laker87/11.0
+   * packages/apps/LineageParts
+93e9158 LineageParts: Tweak default charging sound path
 
 ====================
      01-26-2021
@@ -56,6 +85,9 @@ b864d49 giflib: Update to v5.2.1
    * external/zlib
 4259787 Merge branch 'upstream-master' of https://android.googlesource.com/platform/external/zlib into 11.0
 
+   * packages/services/Telecomm
+935838c Merge pull request #5 from Laker87/11.0
+
 ====================
      01-25-2021
 ====================
@@ -70,9 +102,6 @@ b864d49 giflib: Update to v5.2.1
    * bootable/recovery
 f3c9aae recovery: Add ability to unmount system
 
-   * prebuilts/clang/host/linux-x86/clang-7095922
-83db63e clang 12.0.2 (based on r407598b) from build 7095922
-
 ====================
      01-23-2021
 ====================
@@ -82,6 +111,9 @@ f7db3cf updater_app: Update cache_file permission
 
    * packages/apps/Settings
 4e4fdd9 Merge 'lineage-18.1' into 11.0
+
+   * prebuilts/clang/host/linux-x86/clang-7095922
+83db63e clang 12.0.2 (based on r407598b) from build 7095922
 
 ====================
      01-22-2021
@@ -95,24 +127,4 @@ f7db3cf updater_app: Update cache_file permission
 
    * prebuilts/abi-dumps/vndk
 e000bb2 vndk: remove libhidlbase.so from ABI check target
-
-====================
-     01-21-2021
-====================
-
-   * hardware/qcom/sm8150/display
-57e1155 display: Drop LOCAL_COPY_HEADERS usage
-
-   * hardware/qcom/sm8150/media
-5992430 media: Drop LOCAL_COPY_HEADERS usage
-
-   * tools/repohooks
-147b6c3 Add aidl-format as a new builtin hook
-
-====================
-     01-20-2021
-====================
-
-   * device/google/atv
-9c591b4 products: Include ATV x86_64 target
 
