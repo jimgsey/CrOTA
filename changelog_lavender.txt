@@ -1,130 +1,139 @@
 ====================
-     01-31-2021
+     02-08-2021
 ====================
 
    * frameworks/base
-15784f18 Merge pull request #571 from Laker87/FODKG
+4ddfe019 AlertSlider: Support slider actions without broadcast from device
+
+   * packages/apps/crDroidSettings
+e93edad crDroidSettings: add more FOD animations [2/3] (#703)
+
+   * vendor/addons
+72080bf Merge pull request #25 from Laker87/11.0
+
+====================
+     02-07-2021
+====================
+
+   * android
+023af93 Merge 'lineage-18.1' into 11.0
+
+   * build/make
+356372a Use 'release-keys' for build tag
+
+   * build/soong
+6d51136 Merge pull request #6 from sileshn/11.0
+
+   * frameworks/av
+86cd874 CameraDeviceClient: fix recognition of Y16 format due to unmatching sizes
+
+   * frameworks/native
+c3946db InputDispatcher: allow to intercept a specific event key
+
+   * hardware/interfaces
+97fe04c Merge 'lineage-18.1' into 11.0
+
+   * libcore
+b777996 Merge tag 'android-11.0.0_r29' into 11.0
+
+   * packages/apps/Launcher3
+35f2427 New Crowdin updates (#123)
+
+   * packages/apps/Settings
+527718e Allow to quickly open Running Services from QS panel [2/2]
+
+   * packages/apps/SetupWizard
+c6bddca Merge 'lineage-18.1' into 11.0
+
+   * packages/inputmethods/LatinIME
+2601da6 Merge 'lineage-18.1' into 11.0
+
+   * system/core
+73184d1 Merge 'lineage-18.1' into 11.0
+
+   * vendor/lineage
+fc54e9e crdroid: Bump to version 7.3
+
+   * vendor/qcom/opensource/data-ipa-cfg-mgr
+b64bd20 Merge tag 'LA.UM.9.12.r1-10300-SMxx50.0' into 11.0
+
+====================
+     02-06-2021
+====================
+
+   * external/chromium-webview
+d8c9c41 Update Chromium Webview to 88.0.4324.152
+
+   * external/harfbuzz_ng
+3d1cff0 harfbuzz: strip harfbuzz with HB_LEAN
+
+====================
+     02-05-2021
+====================
+
+   * packages/apps/Bluetooth
+cc597b3 Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29
+
+   * packages/providers/ContactsProvider
+755039c Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29
+
+   * vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+9a8c62b Check permission before sending batch scan result
+
+====================
+     02-04-2021
+====================
+
+====================
+     02-03-2021
+====================
+
+   * tools/repohooks
+f1e0b3b android_test_mapping_format: drop Python 2 support
+
+====================
+     02-02-2021
+====================
+
+   * device/lineage/sepolicy
+b30a9ee common: Label IAntiFlicker live display service
+
+   * hardware/lineage/interfaces
+6d545e8 Initial audio amplifier HAL
+
+   * lineage-sdk
+11d349d Add support for anti flicker mode in LiveDisplay
+
+   * packages/apps/LineageParts
+4a3d720 Add support for anti flicker mode in LiveDisplay
+
+====================
+     02-01-2021
+====================
+
+   * prebuilts/abi-dumps/vndk
+29b6c8b vndk: Remove libyuv.so from ABI checks
+
+====================
+     01-31-2021
+====================
 
 ====================
      01-30-2021
 ====================
 
-   * packages/apps/Launcher3
-da95cc3 New Crowdin updates (#118)
+   * external/libvpx
+f93b143 libwebm: Update libwebm from upstream
 
-====================
-     01-29-2021
-====================
+   * external/libyuv
+f5c7005 libyuv: Compile with -O3
 
    * external/sqlite
 04a0449 Update README.version
 
-   * frameworks/av
-54a872b Revert "OMX AAC decode don't support getting DRC parameters"
+   * hardware/google/pixel
+b2333c4 pixel: Add lineage touch hal
 
    * packages/apps/ThemePicker
 7611ce0 ThemePicker: Make naming page look the same as the other ones
-
-   * tools/repohooks
-8349d89 config: drop Python 2 support
-
-====================
-     01-28-2021
-====================
-
-   * lineage-sdk
-83ee430 Merge 'lineage-18.1' into 11.0
-
-   * packages/apps/Gallery2
-4e96ca6 Gallery2: dark theme
-
-   * packages/apps/crDroidSettings
-c206999 ButtonSettings: Add a setting to swap capacitive keys
-
-   * system/libhwbinder
-623a210 Revert "Disallow shrinking threadpool size once started."
-
-====================
-     01-27-2021
-====================
-
-   * android
-c82ae9e manifest: Track more external repos
-
-   * art
-54199d4 Merge pull request #2 from xNombre/11.0
-
-   * bionic
-ab8d045 Merge pull request #4 from xNombre/11.0
-
-   * external/libjpeg-turbo
-27f5a83 Merge pull request #5 from xNombre/11.0
-
-   * frameworks/native
-2748007 SurfaceFlinger: VSyncPredictor should be robust with inconsistent vsyncs
-
-   * packages/apps/LineageParts
-93e9158 LineageParts: Tweak default charging sound path
-
-====================
-     01-26-2021
-====================
-
-   * external/cpu_features
-3eb0c0f Revert "Rename ART release APEX to com.android.art"
-
-   * external/giflib
-b864d49 giflib: Update to v5.2.1
-
-   * external/scudo
-4423fce Revert "Remove ANDROID_EXPERIMENTAL_MTE."
-
-   * external/vixl
-832654c Revert "Rename ART release APEX to com.android.art."
-
-   * external/zlib
-4259787 Merge branch 'upstream-master' of https://android.googlesource.com/platform/external/zlib into 11.0
-
-   * packages/services/Telecomm
-935838c Merge pull request #5 from Laker87/11.0
-
-====================
-     01-25-2021
-====================
-
-   * hardware/qcom-caf/msm8916/audio
-8eea101 hal: Fix warnings
-
-====================
-     01-24-2021
-====================
-
-   * bootable/recovery
-f3c9aae recovery: Add ability to unmount system
-
-====================
-     01-23-2021
-====================
-
-   * device/lineage/sepolicy
-f7db3cf updater_app: Update cache_file permission
-
-   * packages/apps/Settings
-4e4fdd9 Merge 'lineage-18.1' into 11.0
-
-   * prebuilts/clang/host/linux-x86/clang-7095922
-83db63e clang 12.0.2 (based on r407598b) from build 7095922
-
-====================
-     01-22-2021
-====================
-
-   * hardware/lineage/interfaces
-8fac36e lineage/interfaces: add fastcharge HAL
-
-   * libcore
-099071a Revert^2 "Avoid fd leaks when jniCreateFileDescriptor encounters OOME"
-
-   * prebuilts/abi-dumps/vndk
-e000bb2 vndk: remove libhidlbase.so from ABI check target
 
